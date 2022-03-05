@@ -1,0 +1,15 @@
+{
+  "name": "soccer-info",
+  "version": "1.0.0",
+  "description": "This site was create to provide information about soccer, including: - Today's matches - Top teams - Top players",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
