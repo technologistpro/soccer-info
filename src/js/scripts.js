@@ -51,7 +51,6 @@ if (document.querySelector(".matches")) {
 
 // Generate the competitions data
 function generateCompetitions(competitions) {
-  console.log("K: " + competitions);
   var looped2 = competitions
     .map(
       (competition) => `

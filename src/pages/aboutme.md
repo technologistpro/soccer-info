@@ -1,7 +1,7 @@
 ---
 pageTitle: About Me
 navTitle: About Me
-navClass: nav-z-about
+navClass: nav-about
 ---
 
 ## About me
