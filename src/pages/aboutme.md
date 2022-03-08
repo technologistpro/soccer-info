@@ -18,7 +18,7 @@ src="aboutme_wehxwy_c_scale,w_304.jpg"
 alt="">
 </picture>
 
-<p>I am a technologist and soccer fan. This site coolects the latest information about competitions and most importantly, live matches happening today so that you don't miss any of the action. 
+<p>I am a technologist and soccer fan. This site gathers the latest information about soccer competitions around the world and most importantly, the most popular live matches happening today so that you don't miss any of the action. 
 </p>
 
 </div>
