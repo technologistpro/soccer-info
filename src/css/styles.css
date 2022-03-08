@@ -157,23 +157,31 @@ nav a {
     font-size: 1.5rem;
   }
 }
+
+.nav-matches {
+  order: 1;
+}
+.nav-competitions {
+  order: 2;
+}
+.nav-about {
+  order: 3;
+}
+
 nav .nav-matches a {
   background: linear-gradient(to bottom, #fcde41 1%, #dfa910 100%);
-  order: 1;
 }
 nav .nav-matches a:hover {
   background: linear-gradient(to bottom, #dfa910 0%, #fcde41 100%);
 }
 nav .nav-competitions a {
   background: linear-gradient(to bottom, #6f89c7 0%, #344e8b 100%);
-  order: 2;
 }
 nav .nav-competitions a:hover {
   background: linear-gradient(to bottom, #344e8b 1%, #6f89c7 100%);
 }
 nav .nav-about a {
   background: linear-gradient(to bottom, #f88d8d 0%, #ec4141 100%);
-  order: 3;
 }
 nav .nav-about a:hover {
   background: linear-gradient(to bottom, #ec4141 1%, #f88d8d 100%);
