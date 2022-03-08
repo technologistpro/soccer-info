@@ -1,6 +1,6 @@
 ---
 layout: layout.html
-pageTitle: Soocer Info
+pageTitle: Soocer Match
 pageClass: home
 navTitle: Matches
 navClass: nav-matches

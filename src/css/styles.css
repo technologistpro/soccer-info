@@ -169,10 +169,10 @@ nav .nav-competitions a {
 nav .nav-competitions a:hover {
   background: linear-gradient(to bottom, #344e8b 1%, #6f89c7 100%);
 }
-nav .nav-about a {
+nav .nav-z-about a {
   background: linear-gradient(to bottom, #f88d8d 0%, #ec4141 100%);
 }
-nav .nav-about a:hover {
+nav .nav-z-about a:hover {
   background: linear-gradient(to bottom, #ec4141 1%, #f88d8d 100%);
 }
 
@@ -305,10 +305,6 @@ footer {
   /* grid-template-columns: repeat(3, 1fr); */
   grid-template-columns: [area] 1fr [competition] 1fr;
   grid-gap: 1rem;
-}
-
-.competition {
-  /* justify-self: center; */
 }
 
 .status {
