@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="soccer-info" />
+    <meta property="og:url" content="https://soccer-info.com" />
+    <meta property="og:image" content="https://soccer-info/img/ball.jpg" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>{{site.siteTitle}}</title>
+  </head>
+  <body class="{{ pageClass }}">
+    <header>
+      <h1>soccer-info</h1>
+      <a class="beta" href="#">Beta</a>
+    </header>
+
+    <nav aria-label="Primary navigaton">
+      <p class="quote" aria-live="polite">Your source of Soccer Information</p>
+      <ul>
+        {% for page in collections.page %}
+        <li class="{{ page.data.navClass }}">
+          <a href="{{ page.url | url }}">{{ page.data.navTitle }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <main tabindex="-1" class="content">{{ content }}</main>
+
+    <footer>
+      <p>Copyright soccer-info. All Rights Reserved</p>
+    </footer>
+
+    <div class="modal-outer">
+      <div class="modal">
+        <h3>Hi! I'm a Modal Window (ʘ‿ʘ)╯</h3>
+        <p>Information about the beta program.</p>
+        <a class="closer" href="#0">✖︎</a>
+      </div>
+    </div>
+
+    <script type="module" src="/js/scripts.js"></script>
+  </body>
+</html>
