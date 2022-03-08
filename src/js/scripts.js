@@ -5,7 +5,7 @@ let TZDate = new Date(UTCDate.getTime() - offset * 60 * 1000);
 var today = TZDate.toISOString().split("T")[0];
 
 // API with filter for Today's data only
-var api_url = `http://api.football-data.org/v2/matches?dateFrom=${today}&dateTo=${today}`;
+var api_url = `https://api.football-data.org/v2/matches?dateFrom=${today}&dateTo=${today}`;
 var api_competitions = "https://api.football-data.org/v2/competitions";
 
 // Call the API
