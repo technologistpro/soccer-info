@@ -1,6 +1,6 @@
 ---
 layout: layout.html
-pageTitle: Soocer Match
+pageTitle: Soccer Match
 pageClass: home
 navTitle: Matches
 navClass: nav-matches

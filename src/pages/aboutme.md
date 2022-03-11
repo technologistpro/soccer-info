@@ -2,6 +2,7 @@
 pageTitle: About Me
 navTitle: About Me
 navClass: nav-about
+pageClass: p-about
 ---
 
 ## About me
