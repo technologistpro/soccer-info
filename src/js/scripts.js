@@ -5,7 +5,8 @@ let TZDate = new Date(UTCDate.getTime() - offset * 60 * 1000);
 var today = TZDate.toISOString().split("T")[0];
 
 // API with filter for Today's data only
-var api_url = `https://api.football-data.org/v2/matches?dateFrom=${today}&dateTo=${today}`;
+// var api_url = `https://api.football-data.org/v2/matches?dateFrom=${today}&dateTo=${today}`;
+var api_url = "https://api.football-data.org/v2/competitions/CL/matches";
 var api_competitions = "https://api.football-data.org/v2/competitions";
 
 // Call the API
@@ -13,6 +14,7 @@ function callAPI(api_url) {
   const result = fetch(api_url, {
     headers: { "X-Auth-Token": "a2498628ef65414b9592af00821eb243" },
   });
+
   return result;
 }
 
