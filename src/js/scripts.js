@@ -5,6 +5,7 @@ let TZDate = new Date(UTCDate.getTime() - offset * 60 * 1000);
 var today = TZDate.toISOString().split("T")[0];
 
 // API with filter for Today's data only
+// var api_url = "https://api.football-data.org/v2/matches";
 // var api_url = `https://api.football-data.org/v2/matches?dateFrom=${today}&dateTo=${today}`;
 var api_url = "https://api.football-data.org/v2/competitions/CL/matches";
 var api_competitions = "https://api.football-data.org/v2/competitions";
@@ -21,8 +22,9 @@ function callAPI(api_url) {
 // Generate the matches data
 function generateMatches(matches) {
   var looped = matches
-    .map(
-      (match) => `
+    .map((match) => {
+      if (match.homeTeam.name) {
+        return `
         <div class="status">${match.status}</div>
         <div class="h-team">${match.homeTeam.name}</div>
         <div class="h-score">${
@@ -37,8 +39,9 @@ function generateMatches(matches) {
             : match.score.fullTime.awayTeam
         }</div>
         <div class="separator"></div>
-        `
-    )
+        `;
+      }
+    })
     .join("");
 
   //   return looped;
