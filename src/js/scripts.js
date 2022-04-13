@@ -1,5 +1,5 @@
-const myapikey = process.env.API_KEY;
-console.log(`Say hello: ${myapikey}`);
+// const myapikey = process.env.API_KEY;
+console.log(`Say hello: ${myProject.myapikey}`);
 
 // Get date based on user/client timezone
 let UTCDate = new Date();
